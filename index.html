@@ -44,13 +44,14 @@
 				<input id="phone" type="tel" autocomplete="on" required>
 				<fieldset>
 					<legend>Preferred Contact Method<span class="required">*</span></legend>
-					<input id="phone" type="radio" name="contact" value="phone" required checked>
+					<input id="phonePreferred" type="radio" name="contact" value="phone" required checked>
 					<label for="phone">Phone</label>
-					<input id="email" type="radio" name="contact" value="email">
+					<input id="emailPreferred" type="radio" name="contact" value="email">
 					<label for="email">Email</label>	
 				</fieldset>
 				<label for="state">State<span class="required">*</span></label>
 				<select id="state" name="state" required>
+					<option disabled selected value>Choose a State</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
